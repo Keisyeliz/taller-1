@@ -23,7 +23,7 @@ while var_controlBln ==True:
     os.system('cls')
     print('cliente:  ',var_nombreStr)
     var_opcionStr = int(input('---MENÚ DE OPCIONES---\n\n1. computador de mesa\n2. computador de escritorio\n3. Tabletas\n4. videobeam\n5. tv\n6. Facturar\n -> '))
-    if var_opcionStr >1 and var_opcionStr <=5:
+    if var_opcionStr >= 1 and var_opcionStr <=5:
         var_cantidadInt = int(input('Ingrese la cantidad->'))
         
     if var_opcionStr == 1:
