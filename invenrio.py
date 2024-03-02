@@ -11,18 +11,19 @@ while controlBln == True:
     if var_opcionStr >= 1 and var_opcionStr <= 2:
         cantidadInt = int(input('Ingrese la cantidad->'))
     
+    
     if var_opcionStr == 1:
         existenciasInt += cantidadInt
         
     if var_opcionStr == 2:
         if cantidadInt <= existenciasInt:
-            existenciasInt -= cantidadInt
+           existenciasInt -= cantidadInt
         else:
-            print('\nNo hay suficientes existencias')
-        enter = input('<ENTER>')
-
+            print ('\nNo hay suficientes existencias')
+            
     if var_opcionStr == 3:
-        print('Cantidad actual de inventario:', existenciasInt)
+        print('Cantidad de existencias actuales del inventario: ',existenciasInt)
+        enter = input ('<ENTER>')
         
     if var_opcionStr == 4:
-        controBln = False
+        controlBln = False
